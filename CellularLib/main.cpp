@@ -1,5 +1,6 @@
-#include "controller/LifeController.h"
-#include "controller/core/ControllerRunner.h"
+#include "controllers/LifeController.h"
+#include "controllers/core/ControllerRunner.h"
+#include "engine/LifeEngine.h"
 #include "graphics/GraphicsManager.h"
 #include "graphics/core/Window.h"
 

@@ -1,18 +1,20 @@
 #pragma once
 #include <random>
-#include <vector>
 #include <set>
+#include <vector>
 
 typedef unsigned char t_cell;
 
-enum States { check_right, check_vertical, SIZE };
+namespace states {
+enum State { check_right, check_vertical, SIZ };
+}
 
-enum Type { nothing, person, obstacle, SIZE };
+namespace types {
+enum Type { nothing, person, obstacle, SIZ };
+}
 
-struct Ind {
-  int i;
-  int j;
-};
+using namespace states;
+using namespace types;
 
 class CrowdEngine {
  public:
@@ -26,11 +28,11 @@ class CrowdEngine {
  private:
   void doAction(int i, int j);
 
-  std::set<Ind> changed_;
+  std::set<std::pair<int, int>> changed_;
   std::vector<Type> cells_;
   size_t w_;
   size_t h_;
-  size_t people_num;
+  size_t people_num_;
   std::mt19937 gen_;
 };
 
@@ -39,7 +41,7 @@ inline void CrowdEngine::loadMap() {
   w_ = T::w;
   h_ = T::h;
   cells_.resize(h_ * w_);
-  people_num = T::people_num;
+  people_num_ = T::people_num;
 
   for (auto& o : T::obstacles) {
     for (int i = o.x; i < o.x + o.w; ++i) {
@@ -54,7 +56,7 @@ inline void CrowdEngine::loadMap() {
   std::uniform_int_distribution<> oy(T::people_rect.y,
                                      T::people_rect.y + T::people_rect.h);
 
-  auto cnt = people_num;
+  auto cnt = people_num_;
   while (cnt) {
     int i = ox(gen_);
     int j = oy(gen_);

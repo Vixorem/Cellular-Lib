@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="controller\core\ControllerRunner.cpp" />
-    <ClCompile Include="controller\core\BasicController.cpp" />
-    <ClCompile Include="controller\LifeController.cpp" />
+    <ClCompile Include="controllers\core\BasicController.cpp" />
+    <ClCompile Include="controllers\core\ControllerRunner.cpp" />
+    <ClCompile Include="controllers\LifeController.cpp" />
     <ClCompile Include="engine\CrowdEngine.cpp" />
     <ClCompile Include="engine\LifeEngine.cpp" />
     <ClCompile Include="graphics\core\BasicObject.cpp" />
@@ -141,9 +141,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="controller\core\ControllerRunner.h" />
-    <ClInclude Include="controller\core\BasicController.h" />
-    <ClInclude Include="controller\LifeController.h" />
+    <ClInclude Include="controllers\core\BasicController.h" />
+    <ClInclude Include="controllers\core\ControllerRunner.h" />
+    <ClInclude Include="controllers\LifeController.h" />
     <ClInclude Include="engine\CrowdEngine.h" />
     <ClInclude Include="engine\LifeEngine.h" />
     <ClInclude Include="engine\LifeRules.h" />

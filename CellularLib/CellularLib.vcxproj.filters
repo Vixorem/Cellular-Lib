@@ -39,16 +39,16 @@
     <ClCompile Include="engine\LifeEngine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="controller\LifeController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="controller\core\ControllerRunner.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="controller\core\BasicController.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="engine\CrowdEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controllers\core\BasicController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controllers\core\ControllerRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="controllers\LifeController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,22 +74,22 @@
     <ClInclude Include="engine\LifeEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="controller\LifeController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="engine\LifeRules.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="controller\core\ControllerRunner.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="controller\core\BasicController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="engine\CrowdEngine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="seeds\CrowdSeeds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controllers\core\BasicController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controllers\core\ControllerRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="controllers\LifeController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
