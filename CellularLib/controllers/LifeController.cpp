@@ -15,9 +15,6 @@ void LifeController::update() {
   if (!e_) {
     return;
   }
-  // if (e_->type == SDL_QUIT) {
-  //  exit = true;
-  //}
 
   switch (e_->type) {
     case SDL_MOUSEBUTTONUP:
@@ -63,5 +60,5 @@ void LifeController::initGrid() {
   auto w = manager_->getWindow()->getW();
   auto h = manager_->getWindow()->getH();
 
-  grid_ = std::make_shared<Grid>(w, h, dim, dim);
+  grid_ = std::make_shared<Grid>(w, h, dim, dim, 1);
 }

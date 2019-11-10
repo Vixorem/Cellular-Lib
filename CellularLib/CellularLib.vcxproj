@@ -130,6 +130,8 @@
     <ClCompile Include="controllers\core\BasicController.cpp" />
     <ClCompile Include="controllers\core\ControllerRunner.cpp" />
     <ClCompile Include="controllers\LifeController.cpp" />
+    <ClCompile Include="controllers\CrowdController.cpp" />
+    <ClCompile Include="analytics\CrowdEngineAnalisys.cpp" />
     <ClCompile Include="engine\CrowdEngine.cpp" />
     <ClCompile Include="engine\LifeEngine.cpp" />
     <ClCompile Include="graphics\core\BasicObject.cpp" />
@@ -144,6 +146,8 @@
     <ClInclude Include="controllers\core\BasicController.h" />
     <ClInclude Include="controllers\core\ControllerRunner.h" />
     <ClInclude Include="controllers\LifeController.h" />
+    <ClInclude Include="controllers\CrowdController.h" />
+    <ClInclude Include="analytics\CrowdEngineAnalisys.h" />
     <ClInclude Include="engine\CrowdEngine.h" />
     <ClInclude Include="engine\LifeEngine.h" />
     <ClInclude Include="engine\LifeRules.h" />

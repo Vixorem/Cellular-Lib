@@ -14,6 +14,7 @@ class Window : Graphics {
 
   SDL_Window* getWindow();
   SDL_Renderer* getRenderer();
+  void resize(size_t w, size_t h);
 
   size_t getW();
   size_t getH();

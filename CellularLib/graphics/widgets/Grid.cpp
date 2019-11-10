@@ -14,7 +14,7 @@ Grid::Grid(size_t win_w, size_t win_h, size_t hor_siz, size_t vert_siz,
 Point Grid::getPos(size_t i, size_t j) {
   Point p;
   p.x_ = (pos_.x_ + item_w_ * i + space_ * (i + 1));
-  p.y_ = (pos_.y_ + item_h_ * j + space_ * (j  + 1));
+  p.y_ = (pos_.y_ + item_h_ * j + space_ * (j + 1));
   return p;
 }
 

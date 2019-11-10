@@ -13,7 +13,7 @@ struct Index {
 class Grid {
  public:
   Grid(size_t win_w, size_t win_h, size_t hor_cells_cnt, size_t ver_cells_cnt,
-       size_t space = 1);
+       size_t space);
 
   Point getPos(size_t i, size_t j);
   Point getPos();

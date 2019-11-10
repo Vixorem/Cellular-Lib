@@ -1,7 +1,6 @@
 #include "Window.h"
 
-Window::Window(size_t width, size_t height,
-               const std::string& title)
+Window::Window(size_t width, size_t height, const std::string& title)
     : Graphics(), width_(width), height_(height) {
   sdl_window_ = SDL_CreateWindow(title.c_str(), SDL_WINDOWPOS_UNDEFINED,
                                  SDL_WINDOWPOS_UNDEFINED, width_, height_,
@@ -38,7 +37,10 @@ SDL_Window* Window::getWindow() { return sdl_window_; }
 
 SDL_Renderer* Window::getRenderer() { return sdl_renderer_; }
 
+void Window::resize(size_t w, size_t h) {
+  SDL_SetWindowSize(sdl_window_, w, h);
+}
+
 size_t Window::getW() { return width_; }
 
 size_t Window::getH() { return height_; }
-
