@@ -1,5 +1,4 @@
 #include <iostream>
-#include "analytics/CrowdEngineAnalisys.cpp"
 #include "controllers/CrowdController.h"
 #include "controllers/LifeController.h"
 #include "controllers/core/ControllerRunner.h"
@@ -26,7 +25,7 @@ int main(int argc, char* args[]) {
 
   int res;
 
-  for (int i = 0; i < 13; ++i) {
+  for (int i = 0; i < 15; ++i) {
     size_t sum = 0;
     for (int k = 0; k < count; ++k) {
       engine.loadMap(i);
@@ -36,7 +35,7 @@ int main(int argc, char* args[]) {
     std::cout << sum / count << std::endl;
   }
 
-  std::cout << "done\n";
+  //std::cout << "done\n";
 
   return 0;
 }

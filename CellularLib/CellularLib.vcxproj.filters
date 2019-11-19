@@ -54,9 +54,6 @@
     <ClCompile Include="controllers\CrowdController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="analytics\CrowdEngineAnalisys.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graphics\core\BasicObject.h">
@@ -99,9 +96,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="controllers\CrowdController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="analytics\CrowdEngineAnalisys.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

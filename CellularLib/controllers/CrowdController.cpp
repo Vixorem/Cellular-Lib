@@ -28,7 +28,7 @@ void CrowdController::draw() {
   auto h = engine_->h();
   for (size_t i = 0; i < h; ++i) {
     for (size_t j = 0; j < w; ++j) {
-      auto pos = grid_->getPos(j, i);
+      auto pos = grid_->getPos(i, j);
       auto t = engine_->at(i, j);
 
       switch (t) {

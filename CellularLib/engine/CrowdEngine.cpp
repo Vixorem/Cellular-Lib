@@ -101,7 +101,7 @@ void CrowdEngine::moveColumns(int m) {
     }
   }
   for (int i = CrowdMap::columns[1].row;
-       i < CrowdMap::columns[1].row + CrowdMap::columns[0].h; ++i) {
+       i < CrowdMap::columns[1].row + CrowdMap::columns[1].h; ++i) {
     for (int j = CrowdMap::columns[1].col;
          j < CrowdMap::columns[1].col + CrowdMap::columns[1].w; ++j) {
       set(i - m, j, Type::obstacle);
